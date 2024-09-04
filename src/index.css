@@ -1,13 +1,72 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+  --primary-color: #121212;
+  --secondary-color: rgb(252, 248, 245);
 }
+
+body{
+  background-color: var(--secondary-color);
+
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu ul li{
+  margin-right: 50px;
+  list-style: none;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.menu ul li a.active:before{
+  position: absolute;
+  content: '';
+  width: 35%;
+  height: 1px;
+  border-bottom: 2px solid var(--primary-color);
+  bottom: -6px;
+}
+
+.menu ul li a:before{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid var(--primary-color);
+    bottom: -6px;
+    transition: width .3s;
+}
+
+.menu ul li a:hover:before{
+  width: 35%;
+}
+
+
+
+
+
+
+
+
+
+
+
