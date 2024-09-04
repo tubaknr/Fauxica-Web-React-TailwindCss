@@ -1,13 +1,21 @@
 import React from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import { Routes, Route} from "react-router-dom";
 import "./index.css";
+import { BrowserRouter } from "react-router-dom";
+import Home from './pages/Home';
+import Contact from "./pages/Contact";
 
 export default function App(){
   return (
     <div>
-      <Header/>
-      <Hero/>
+      <BrowserRouter>
+        <Routes>
+          <Route index element={<Home/>}/>
+          <Route path="/home" element={<Home/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="*" element={<Home/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
