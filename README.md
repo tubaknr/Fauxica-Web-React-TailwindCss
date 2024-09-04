@@ -1,5 +1,6 @@
 # Fauxica E-Commerce Web Application
 * Made with React & Tailwindcss.
+![Screenshot from 2024-09-04 13-56-20](https://github.com/user-attachments/assets/aea2bb61-f739-48fa-84a1-446cd56c7511)
 
 # Getting Started with Create React App
 
