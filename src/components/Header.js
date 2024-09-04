@@ -1,11 +1,12 @@
 import React from "react";
+import logo from "/home/tuba/Desktop/fauxica-react/fauxica-web/src/images/logo.svg";
 
 export default function Header(){
     return(
         <header className="flex justify-between m-20 mr-30 font-Inter">
             <div class="logo" className="mx-20 ml-20">
                 <a href="#" >
-                    <img src="images/logo.svg" className="w-40"/>
+                    <img src={logo} className="w-40"/>
                 </a>
             </div>
             <div className="menu">

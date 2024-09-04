@@ -4,7 +4,6 @@ import left from "/home/tuba/Desktop/fauxica-react/fauxica-web/src/images/clothi
 import rightTop from "/home/tuba/Desktop/fauxica-react/fauxica-web/src/images/clothing2.jpg";
 import rightBottom from "/home/tuba/Desktop/fauxica-react/fauxica-web/src/images/clothing3.jpg";
 import confetti from "/home/tuba/Desktop/fauxica-react/fauxica-web/src/images/confetti.svg";
-import ticket from "/home/tuba/Desktop/fauxica-react/fauxica-web/src/images/tag.svg";
 
 export default function Hero(){
     return(

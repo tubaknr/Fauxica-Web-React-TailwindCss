@@ -1,5 +1,4 @@
 import React from "react";
-import Ticket from "./Ticket";
 import ticketsvg from "/home/tuba/Desktop/fauxica-react/fauxica-web/src/images/tag.svg";
 
 export default function Card({imgSrc, title, itemName, price, marginX, marginY, topPercentage, ticketImg}){
