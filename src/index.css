@@ -17,56 +17,56 @@ body{
 
 }
 
-.menu ul{
-  display: flex;
-  justify-content: space-between;
+.custom-underline{
+  position: relative;
+  display: inline-block;
 }
 
-.menu ul li{
-  margin-right: 50px;
-  list-style: none;
+.custom-underline:before{
+  position: absolute;
+  content: '';
+  width: 0%;
+  left: 0;
+  height: 2px;
+  border-bottom: 2px solid var(--primary-color);
+  bottom: -5px;
+  transition: width .3s;
 }
 
-.menu ul li a{
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 15px;
-  letter-spacing: 1px;
+.custom-underline:hover:before{
+  width: 45%;
+}
+
+.current-page{
+  position: relative;
+  display: inline-block;
+}
+
+.current-page:before{
+  position: absolute;
+  content: '';
+  width: 45%;
+  left: 0;
+  height: 2px;
+  border-bottom: 2px solid var(--primary-color);
+  bottom: -5px;
+  transition: width .3s;
+}
+
+.custom-slide svg{
   position: relative;
 }
 
-.menu ul li a.active:before{
-  position: absolute;
-  content: '';
-  width: 35%;
-  height: 1px;
-  border-bottom: 2px solid var(--primary-color);
-  bottom: -6px;
+.custom-slide:hover svg{
+  transform: translate(10px);
+  transition: transform .3s;
 }
 
-.menu ul li a:before{
-    position: absolute;
-    content: '';
-    width: 0%;
-    height: 1px;
-    border-bottom: 2px solid var(--primary-color);
-    bottom: -6px;
-    transition: width .3s;
+.ticket-img{
+  position: relative;
 }
 
-.menu ul li a:hover:before{
-  width: 35%;
+.ticket-img:before{
+  background-image: url("./images/tag.svg");
 }
-
-
-
-
-
-
-
-
-
-
 

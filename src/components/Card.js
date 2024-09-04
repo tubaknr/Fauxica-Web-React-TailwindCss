@@ -1,10 +1,15 @@
 import React from "react";
+import Ticket from "./Ticket";
+import ticketsvg from "/home/tuba/Desktop/fauxica-react/fauxica-web/src/images/tag.svg";
 
-export default function Card({imgSrc, title, itemName, price, marginX, marginY, topPercentage}){
+export default function Card({imgSrc, title, itemName, price, marginX, marginY, topPercentage, ticketImg}){
+
     return(
-        <div className="relative mr-10 m-10 overflow-hidden">
-            <img src={imgSrc} alt="cloth" className="rounded-3xl w-80 object-cover"/>
+        <div className="relative mr-10 m-10 font-Inter">
+            <img src={imgSrc} alt="cloth" className="relative inset-0 rounded-3xl w-80 object-cover"/>
             
+            {ticketImg === "true" && <img src={ticketsvg} className="absolute inset-0 top-0 left-[-2cm] no-repeat w-48 h-25"/>}
+
             <div class="details" 
                 className="absolute inset-0 flex items-center justify-center bg-opacity-80 rounded-2xl bg-white" 
                 style={{top: `${topPercentage}%`,
@@ -20,7 +25,7 @@ export default function Card({imgSrc, title, itemName, price, marginX, marginY, 
                 </div>
 
                 <div class="right" className="flex items-center pl-5">
-                    <p className="text-sm">{price}</p>
+                    <p className="font-bold text-lg">{price}</p>
                 </div>
             
             

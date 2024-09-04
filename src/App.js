@@ -7,7 +7,7 @@ export default function App(){
   return (
     <div>
       <Header/>
-      <Hero className="mr-20"/>
+      <Hero/>
     </div>
   );
 }

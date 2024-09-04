@@ -11,13 +11,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'ligh_yellow': '#F1E2D1',
+        customYellow: '#F1E2D1',
       },
+      fontFamily: {
+        'Inter': ['Inter', 'sans-serif'],
+      }
     },
   },
   plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
+    
   ],
 }
 
