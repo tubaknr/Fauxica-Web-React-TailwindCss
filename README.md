@@ -7,6 +7,14 @@
 
 ![Screenshot from 2024-09-04 15-45-45](https://github.com/user-attachments/assets/d4c6768b-78b1-4173-8e49-72ba2e815098)
 
+## Dark Mode (on progress)
+
+![Screenshot from 2024-09-05 12-29-28](https://github.com/user-attachments/assets/09e7d81c-895f-4eab-9ff6-7196ff7ac3bd)
+
+![Screenshot from 2024-09-05 12-29-33](https://github.com/user-attachments/assets/913133d7-9f2b-475b-be8f-98f4ff546f29)
+
+![Screenshot from 2024-09-05 12-29-43](https://github.com/user-attachments/assets/2cbfd55c-e809-4a11-aea9-9784d7dc36e9)
+
 
 # Getting Started with Create React App
 
