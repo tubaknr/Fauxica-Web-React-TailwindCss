@@ -9,6 +9,8 @@
 
 ## Dark Mode (on progress)
 
+* The colors of the logo will be adjusted.
+
 ![Screenshot from 2024-09-05 12-29-28](https://github.com/user-attachments/assets/09e7d81c-895f-4eab-9ff6-7196ff7ac3bd)
 
 ![Screenshot from 2024-09-05 12-29-33](https://github.com/user-attachments/assets/913133d7-9f2b-475b-be8f-98f4ff546f29)
