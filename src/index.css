@@ -11,16 +11,15 @@
 :root{
   --primary-color: #121212;
   --secondary-color: rgb(252, 248, 245);
-}
 
-[data-theme="dark"]{
-  --primary-color: #rgb(252, 248, 245);
-  --secondary-color: #121212; 
 }
 
 body{
   background-color: var(--secondary-color);
+}
 
+.dark body{
+  background-color: #1a1919;
 }
 
 .custom-underline{
@@ -37,6 +36,10 @@ body{
   border-bottom: 2px solid var(--primary-color);
   bottom: -5px;
   transition: width .3s;
+}
+
+.dark .custom-underline:before{
+  border-bottom: 2px solid white;
 }
 
 .custom-underline:hover:before{
@@ -59,6 +62,10 @@ body{
   transition: width .3s;
 }
 
+.dark .current-page:before{
+  border-bottom: 2px solid white;
+}
+
 .custom-slide svg{
   position: relative;
 }
@@ -76,3 +83,6 @@ body{
   background-image: url("./images/tag.svg");
 }
 
+.texts{
+  color: var(--primary-color);
+}

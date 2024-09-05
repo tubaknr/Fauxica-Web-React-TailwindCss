@@ -7,8 +7,8 @@ export default function Contact(){
             <Header/>
             <div className="m-40 items-center flex flex-col justify-center block">
                 <div className="text-center">
-                    <h1 className="font-bold text-4xl m-5">Contact Us</h1>
-                    <p className="text-black text-xl m-10">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
+                    <h1 className="font-bold text-4xl m-5 dark:text-white">Contact Us</h1>
+                    <p className="text-black text-xl m-10 dark:text-white">Got a technical issue? Want to send feedback about a beta feature? Need details about our Business plan? Let us know.</p>
                 </div>
 
                 <div className="text-center items-start">
