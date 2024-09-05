@@ -10,6 +10,7 @@
 ## Dark Mode (on progress)
 
 * The colors of the logo will be adjusted.
+* The webstie will be turned into a responsive version.
 
 ![Screenshot from 2024-09-05 12-29-28](https://github.com/user-attachments/assets/09e7d81c-895f-4eab-9ff6-7196ff7ac3bd)
 
