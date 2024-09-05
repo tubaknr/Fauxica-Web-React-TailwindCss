@@ -1,9 +1,9 @@
 # Fauxica E-Commerce Web Application
 * Made with React & Tailwindcss.
 
-![Screenshot from 2024-09-04 15-45-28](https://github.com/user-attachments/assets/8f58e5fe-d069-4ec4-9b66-2570fdce6883)
+![Screenshot from 2024-09-05 12-31-53](https://github.com/user-attachments/assets/7e469f1c-8e13-466e-9bff-862a541c2588)
 
-![Screenshot from 2024-09-04 15-45-36](https://github.com/user-attachments/assets/4afc345e-8fd4-4b40-a53a-e61da77d2407)
+![Screenshot from 2024-09-05 12-31-59](https://github.com/user-attachments/assets/dd7bcaf6-effc-4a6d-a1f6-859bd7e2ef4e)
 
 ![Screenshot from 2024-09-04 15-45-45](https://github.com/user-attachments/assets/d4c6768b-78b1-4173-8e49-72ba2e815098)
 
