@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import Sun from "../images/sun.png";
 import Moon from "../images/moon.png";
 import logo from "/home/tuba/Desktop/fauxica-react/fauxica-web/src/images/logo.svg";
-import { Link } from 'react-router-dom';
+import { Link , useLocation} from 'react-router-dom';
 
 
 export default function Header(){
@@ -29,11 +29,13 @@ export default function Header(){
 
 
    const handleThemeSwitch = () => {
-    setTheme(prevTheme => (prevTheme ==="dark" ? "light" : "dark"));
+    setTheme(prevTheme => (prevTheme === "dark" ? "light" : "dark"));
    };
 
+   const location = useLocation();
+
     return(
-        <header className="flex justify-between p-4 m-20 mr-30 font-Inter dark:DARKbG">
+        <header className="flex justify-between p-4 m-20 mr-30 font-Inter dark:darkBg">
             <div className="menu ">
                 <ul className="flex justify-between mr-40 space-x-40 mt-5">
                     <li className="mr-40">
@@ -41,10 +43,10 @@ export default function Header(){
                             <img src={logo} className="ml-20 mx-20 h-auto dark:text-white"/>
                         </a>
                     </li>
-                    <li><Link to="/home" className="text-lg tracking-widest uppercase dark:text-white current-page">Home</Link></li>
-                    <li><a href="#" className="text-lg tracking-widest uppercase custom-underline dark:text-white">Products</a></li>
-                    <li><a href="#" className="text-lg tracking-widest uppercase custom-underline dark:text-white">Gallery</a></li>
-                    <li><Link to="/contact" className="text-lg tracking-widest uppercase custom-underline dark:text-white">Contact</Link></li>
+                    <li><Link to="/home" className={`text-lg tracking-widest uppercase dark:text-white ${location.pathname === "/home" ? "current-page" : ""}`}>Home</Link></li>
+                    <li><a href="#" className={`text-lg tracking-widest uppercase custom-underline dark:text-white ${location.pathname === "/products" ? "current-page" : ""}`}>Products</a></li>
+                    <li><a href="#" className={`text-lg tracking-widest uppercase custom-underline dark:text-white ${location.pathname === "/gallery" ? "current-page" : ""}`}>Gallery</a></li>
+                    <li><Link to="/contact" className={`text-lg tracking-widest uppercase custom-underline dark:text-white ${location.pathname === "/contact" ? "current-page" : ""}`}>Contact</Link></li>
                     <li>
                         <button className="bg-none border-0 w-20 mt-[-20px] p-2 cursor-pointer"
                             onClick={handleThemeSwitch} >
